@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftFormatic - File Converters</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>SwiftFormatic - File Converters</h1>
+        <div class="app-grid">
+            <button class="tool" data-type="image-pdf">Image to PDF</button>
+            <button class="tool" data-type="text-pdf">Text to PDF</button>
+            <button class="tool" data-type="pdf-word">PDF to Word</button>
+            <button class="tool" data-type="word-pdf">Word to PDF</button>
+            <button class="tool" data-type="image-word">Image to Word</button>
+            <button class="tool" data-type="image-excel">Image to Excel</button>
+        </div>
+    </div>
+
+    <!-- Processing Section with Progress Bar -->
+    <div id="processing" class="processing-container">
+        <p>Processing... Please wait.</p>
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+    </div>
+
+    <input type="file" id="imageInput" accept="image/*" style="display: none;">
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/4.0.2/tesseract.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
